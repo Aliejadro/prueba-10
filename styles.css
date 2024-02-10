@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 150vw;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(41, 3, 3);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    position: fixed;
+    width: 100%;
+    height: 121px;
+}
+
+header h1{
+    text-align: left;
+    font-size: 60px;
+    margin-left: 50px;
+    
+    
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.galeria-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 420px;
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-column: 1/2;
+}
+
+.galeria-left > img, .galeria-right > img{
+    border: 8px solid rgb(56, 3, 3);
+    border-radius: 9px;
+}
+
+.galeria-right{
+    grid-column: 3/4;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 420px;
+    padding-left: 50px;
+    padding-right: 50px; 
+}
+
+.middle-form{
+    grid-column: 2/3;
+    padding-top: 250px;
+    padding-left: 50px;
+    padding-right: 50px; 
+}
+
+h2{
+    text-align: center;
+    font-size: 70px;
+    padding-top: 120px;
+}
+
+form{
+    border: 7px solid rgb(56, 3, 3);
+    height: 100vw;
+    padding-top: 10px;
+}
+
+fieldset{
+    border: 0;
+    border-bottom: 3px solid rgb(56, 3, 3);
+}
+
+label{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 500px;
+    display: block; 
+    text-align: center;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+select{
+    width: 125px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+legend{
+    font-size: 25px;
+    width: 100%;      
+}
+
+fieldset:last-of-type{
+    border: 0;
+}
+
+nav{
+    margin: 0 auto;
+    padding-top: 55px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size:  40px;
+}
+
+nav a:hover{
+    background-color: rgba(223, 215, 215, 0.397);
+}
+
+button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 100px;
+    height: 70px;
+    font-size: 30px;
+}
